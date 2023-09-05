@@ -33,11 +33,13 @@ const Home = () => {
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div className={styles.planDetails}>
-            <Image src={iconMusic} alt={""} />
-            <div className={styles.planTypePriceContainer}>
-              <p className={styles.planType}>Annual Plan</p>
-              <p className={styles.planPrice}>$59.99/year</p>
+          <div className={styles.planDetailsContainer}>
+            <div className={styles.planDetails}>
+              <Image src={iconMusic} alt={""} />
+              <div className={styles.planTypePriceContainer}>
+                <p className={styles.planType}>Annual Plan</p>
+                <p className={styles.planPrice}>$59.99/year</p>
+              </div>
             </div>
             <button className={styles.tertiaryButton}>Change</button>
           </div>

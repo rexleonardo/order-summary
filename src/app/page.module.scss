@@ -38,26 +38,31 @@
                 line-height: 25px;
             }
     
-            .planDetails {
+            .planDetailsContainer {
+                display: flex;
+                justify-content: space-between;
                 margin-top: 24px;
                 border-radius: 11px;
+                width: 100%;
                 padding: 16px;
                 background-color: var(--very-pale-blue);
-                display: flex;
-    
-                .planTypePriceContainer {
-                    margin: 0 50px 0 20px;
+
+                .planDetails {
                     display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: center;
-                    font-size: 14px;
-                    line-height: normal;
-    
-                    .planType {
-                        margin-bottom: 3px;
-                        color: var(--dark-blue);
-                        font-weight: 900;
+
+                    .planTypePriceContainer {
+                        margin-left: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        font-size: 14px;
+                        line-height: normal;
+        
+                        .planType {
+                            margin-bottom: 3px;
+                            color: var(--dark-blue);
+                            font-weight: 900;
+                        }
                     }
                 }
     
@@ -135,17 +140,19 @@
                     margin: 17px 0 0;
                     line-height: 26px;
                 }
-        
-                .planDetails {
+
+                .planDetailsContainer {
                     margin-top: 20px;
                     padding: 25px 24px;
-        
-                    .planTypePriceContainer {
-                        margin: 0 94px 0 20px;
-                        font-size: 16px;
-        
-                        .planType {
-                            margin-bottom: 6px;
+
+                    .planDetails {
+    
+                        .planTypePriceContainer {
+                            font-size: 16px;
+            
+                            .planType {
+                                margin-bottom: 6px;
+                            }
                         }
                     }
         
