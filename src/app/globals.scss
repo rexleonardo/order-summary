@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Custom */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --highlighted-bright-blue: hsla(245, 83%, 68%, 1);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--pale-blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
+  color: var(--desaturated-blue);
+
+  h1 {
+    font-size: 22px;
+    color: var(--dark-blue);
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  button {
+    border: none;
+    padding: 0;
+    background-color: hsla(0, 100%, 100%, 0);
+    line-height: normal;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 16px;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+}

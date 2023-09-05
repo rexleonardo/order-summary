@@ -1,0 +1,167 @@
+.backgroundContainer {
+
+    .backgroundMobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .backgroundDesktop {
+        display: none;
+    }
+
+    .mainContainer {
+        border-radius: 20px;
+        max-width: 327px;
+        background-color: var(--white);
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    
+        .illustration {
+            border-radius: 20px 20px 0 0;
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .sectionContainer {
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            .description {
+                margin: 16px 8px 0;
+                line-height: 25px;
+            }
+    
+            .planDetails {
+                margin-top: 24px;
+                border-radius: 11px;
+                padding: 16px;
+                background-color: var(--very-pale-blue);
+                display: flex;
+    
+                .planTypePriceContainer {
+                    margin: 0 50px 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    font-size: 14px;
+                    line-height: normal;
+    
+                    .planType {
+                        margin-bottom: 3px;
+                        color: var(--dark-blue);
+                        font-weight: 900;
+                    }
+                }
+    
+                .tertiaryButton {
+                    color: var(--bright-blue);
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-decoration-line: underline;
+                }
+
+                .tertiaryButton:hover {
+                    color: var(--highlighted-bright-blue);
+                    transition: 200ms;
+                }
+            }
+    
+            .primaryButton {
+                margin-top: 24px;
+                border-radius: 11px;
+                box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+                padding: 15px 0;
+                width: 100%;
+                background-color: var(--bright-blue);
+                color: var(--white);
+                font-weight: 900;
+            }
+
+            .primaryButton:hover {
+                background-color: var(--highlighted-bright-blue);
+                transition: 200ms;
+            }
+    
+            .secondaryButton {
+                margin-top: 24px;
+                color: var(--desaturated-blue);
+                font-weight: 900;
+            }
+
+            .secondaryButton:hover {
+                color: var(--dark-blue);
+                transition: 200ms;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .backgroundContainer {
+
+        .backgroundMobile {
+            display: none;
+        }
+    
+        .backgroundDesktop {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    
+        .mainContainer {
+            max-width: 450px;
+        
+            .illustration {
+                height: 220px;
+            }
+            
+            .sectionContainer {
+                padding: 45px 48px 48px;
+        
+                .description {
+                    margin: 17px 0 0;
+                    line-height: 26px;
+                }
+        
+                .planDetails {
+                    margin-top: 20px;
+                    padding: 25px 24px;
+        
+                    .planTypePriceContainer {
+                        margin: 0 94px 0 20px;
+                        font-size: 16px;
+        
+                        .planType {
+                            margin-bottom: 6px;
+                        }
+                    }
+        
+                    .tertiaryButton {
+                        font-size: 14px;
+                    }
+                }
+        
+                .primaryButton {
+                    margin-top: 32px;
+                }
+        
+                .secondaryButton {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+}
